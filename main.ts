@@ -75,7 +75,7 @@ namespace dfplayer {
         sendData()
     }
 
-    //% blockId="setTracking" block="play mp3 on the track:%tracking|repeat:%myAns"
+    //% blockId="setTracking" block="play the mp3 on the track:%tracking|repeat:%myAns"
     //% weight=85 blockGap=20 tracking.min=1 tracking.max=255
     export function setTracking(tracking:number,myAns:yesOrNot):void{
         CMD=0x03
@@ -92,7 +92,7 @@ namespace dfplayer {
     }
 
 
-    //% blockId="folderPlay" block="play mp3 on folder:%folderNum|file:%fileNum|repeat:%myAns"
+    //% blockId="folderPlay" block="play the mp3 in the folder:%folderNum|filename:%fileNum|repeat:%myAns"
     //% weight=80 blockGap=20 folderNum.min=1 folderNum.max=99 fileNum.min=1 fileNum.max=255
     export function folderPlay(folderNum:number, fileNum:number,myAns:yesOrNot):void{
         CMD=0x0F
@@ -107,7 +107,7 @@ namespace dfplayer {
            execute(0x19)
     }
 
-    //% blockId="setLoop" block="loop play all the MP3s in SD card"
+    //% blockId="setLoop" block="loop play all the MP3s in the SD card"
     //% weight=75 blockGap=20 
     export function setLoop():void{
         CMD=0x11

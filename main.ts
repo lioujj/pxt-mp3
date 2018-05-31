@@ -29,9 +29,7 @@ namespace dfplayer {
         //% block="PlayPrevious"
         type4 = 0x02,
         //% block="Pause"
-        type5 = 0x0E,
-        //% block="Random"
-        type6 = 0x18
+        type5 = 0x0E
     }
 
     export enum yesOrNot {

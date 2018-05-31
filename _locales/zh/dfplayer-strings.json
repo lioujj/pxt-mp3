@@ -5,7 +5,6 @@
     "dfplayer.playType.type3|block": "播放下一首",
     "dfplayer.playType.type4|block": "播放前一首",
     "dfplayer.playType.type5|block": "暫停",
-    "dfplayer.playType.type6|block": "隨機播放",
     "dfplayer.yesOrNot.type1|block": "否",
     "dfplayer.yesOrNot.type2|block": "是",
     "dfplayer.MP3_setSerial|block": "設定DFPlayer mini RX腳位:%pinRX|TX腳位:%pinTX",

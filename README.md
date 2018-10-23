@@ -29,5 +29,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-dfplayer=github:XXXXX/pxt-mp3
+dfplayer=github:lioujj/pxt-mp3
 ```

@@ -25,6 +25,12 @@ The blocks can let you attch DFPlayer Mini to micro:bit, let the micro:bit play 
 ## The MP3 player blocks
 ![image](images/blocks.jpg)
 
+## Sample1
+![image](images/sample1.jpg)
+
+## Sample2
+![image](images/sample2.jpg)
+
 ## License
 
 MIT

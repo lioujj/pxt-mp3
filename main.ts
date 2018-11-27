@@ -40,7 +40,7 @@ namespace dfplayer {
     }
 
     //% blockId="MP3_setSerial" block="set DFPlayer mini RX to %pinRX|TX to %pinTX"
-    //% weight=100 blockExternalInputs=true blockGap=20
+    //% weight=100 blockGap=20
     export function MP3_setSerial(pinRX: SerialPin, pinTX: SerialPin): void {
         serial.redirect(
             pinRX,

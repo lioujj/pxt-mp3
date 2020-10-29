@@ -17,6 +17,8 @@ namespace dfplayer {
     let para2=0x00
     let highByte=0x00
     let lowByte=0x00
+    let MP3_tx=SerialPin.P1
+    let MP3_rx=SerialPin.P2
     let dataArr: number[] = [Start_Byte, Version_Byte, Command_Length, CMD, Acknowledge, para1, para2, highByte, lowByte, End_Byte]
 
     export enum playType {
@@ -39,15 +41,33 @@ namespace dfplayer {
         type2 = 1
     }
 
-    //% blockId="MP3_setSerial" block="set DFPlayer mini RX to %pinRX|TX to %pinTX"
+
+    /**
+     * @param pinRX to pinRX ,eg: SerialPin.P2
+     * @param pinTX to pinTX ,eg: SerialPin.P1
+    */
+    //% blockId="MP3_setSerial" block="set DFPlayer mini RX to %pinTX| TX to %pinRX"
     //% weight=100 blockGap=20
-    export function MP3_setSerial(pinRX: SerialPin, pinTX: SerialPin): void {
+    export function MP3_setSerial(pinTX: SerialPin, pinRX: SerialPin): void {
+        MP3_tx=pinTX;
+        MP3_rx=pinRX;
         serial.redirect(
-            pinRX,
-            pinTX,
+            MP3_tx,
+            MP3_rx,
             BaudRate.BaudRate9600
         )
         basic.pause(100)
+    }
+
+    //% blockId="MP3_serialReconnect" block="set DFPlayer reconnect to micro:bit serial"
+    //% weight=99 blockGap=20
+    export function MP3_serialReconnect(): void {
+        serial.redirect(
+            MP3_tx,
+            MP3_rx,
+            BaudRate.BaudRate9600
+        )
+        basic.pause(20)
     }
 
     function checkSum():void {

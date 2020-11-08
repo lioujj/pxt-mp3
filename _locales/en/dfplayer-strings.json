@@ -8,7 +8,7 @@
     "dfplayer.yesOrNot.type1|block": "no",
     "dfplayer.yesOrNot.type2|block": "yes",
     "dfplayer.MP3_setSerial|block": "set DFPlayer mini RX to %pinTX| TX to %pinRX",
-    "dfplayer.MP3_serialReconnect|block": "set DFPlayer reconnect to micro:bit serial",
+    "dfplayer.MP3_serialReconnect|block": "set DFPlayer reconnect to micro:bit",
     "dfplayer.execute|block": "execute procedure:%myType",
     "dfplayer.setTracking|block": "play the mp3 on the track:%tracking|repeat:%myAns",
     "dfplayer.folderPlay|block": "play the mp3 in the folder:%folderNum|filename:%fileNum|repeat:%myAns",

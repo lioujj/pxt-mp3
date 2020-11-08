@@ -153,8 +153,8 @@ namespace dfplayer {
     }
 
 
-    //% blockId="setVolume" block="set volume(0~48):%volume"
-    //% weight=70 blockGap=20 volume.min=0 volume.max=48
+    //% blockId="setVolume" block="set volume(0~30):%volume"
+    //% weight=70 blockGap=20 volume.min=0 volume.max=30
     export function setVolume(volume:number):void{
         CMD=0x06
         para1=0

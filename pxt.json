@@ -9,7 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/dfplayer-strings.json"
+        "_locales/zh-tw/dfplayer-strings.json",
+        "_locales/en/dfplayer-strings.json"
     ],
     "public": true
 }

@@ -1,0 +1,18 @@
+{
+    "dfplayer|block": "MP3 Player",
+    "dfplayer.playType.type1|block": "Play",
+    "dfplayer.playType.type2|block": "Stop",
+    "dfplayer.playType.type3|block": "PlayNext",
+    "dfplayer.playType.type4|block": "PlayPrevious",
+    "dfplayer.playType.type5|block": "Pause",
+    "dfplayer.yesOrNot.type1|block": "no",
+    "dfplayer.yesOrNot.type2|block": "yes",
+    "dfplayer.MP3_setSerial|block": "set DFPlayer mini RX to %pinTX| TX to %pinRX",
+    "dfplayer.MP3_serialReconnect|block": "set DFPlayer reconnect to micro:bit serial",
+    "dfplayer.execute|block": "execute procedure:%myType",
+    "dfplayer.setTracking|block": "play the mp3 on the track:%tracking|repeat:%myAns",
+    "dfplayer.folderPlay|block": "play the mp3 in the folder:%folderNum|filename:%fileNum|repeat:%myAns",
+    "dfplayer.setLoop|block": "loop play all the MP3s in the SD card",
+    "dfplayer.setLoopFolder|block": "loop play all the MP3s in the folder:%folderNum",
+    "dfplayer.setVolume|block": "set volume(0~30):%volume"
+}
